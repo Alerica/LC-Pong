@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public int boardSpeed;
+    public int paddleSpeed;
     void Start()
     {
         
@@ -16,11 +16,11 @@ public class PlayerMovement : MonoBehaviour
 
         if(isPressingUp) 
         {
-            transform.Translate(Vector2.up * Time.deltaTime * boardSpeed);
+            transform.Translate(Vector2.up * Time.deltaTime * (1 + paddleSpeed));
         }
         if(isPressingDown)
         {
-            transform.Translate(Vector2.down * Time.deltaTime * boardSpeed);
+            transform.Translate(Vector2.down * Time.deltaTime * (1 + paddleSpeed));
         }
     }
 }

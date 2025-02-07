@@ -17,9 +17,13 @@ public class BallMovement : MonoBehaviour
         rb2d.linearVelocity = new Vector2(xVelocity * movementSpeed , yVelocity * movementSpeed);
     }
 
-    
     void Update()
     {
         
+    }
+
+    public void AddForce(Vector2 force) // Adding ball movement speed everytime
+    {
+        rb2d.AddForce(force);
     }
 }
