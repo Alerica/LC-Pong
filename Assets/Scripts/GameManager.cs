@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     private int player1Score;
@@ -21,6 +20,13 @@ public class GameManager : MonoBehaviour
         player2Score++;
         ball.ResetBallPosition();
         player2ScoreText.text = player2Score.ToString();
+    }
+
+    public void ResetScore() 
+    {
+        player1Score = 0;
+        player2Score = 0;
+        ball.ResetBallPosition();
     }
 
 }
