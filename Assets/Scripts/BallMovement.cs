@@ -13,8 +13,8 @@ public class BallMovement : MonoBehaviour
             xVelocity = -1f;
         }
 
-        float yVelocity = UnityEngine.Random.Range(-1, 1);
-        rb2d.linearVelocity = new Vector2(xVelocity * movementSpeed   , yVelocity * movementSpeed);
+        float yVelocity = UnityEngine.Random.Range(-1f, 1f);
+        rb2d.linearVelocity = new Vector2(xVelocity * movementSpeed , yVelocity * movementSpeed);
     }
 
     
